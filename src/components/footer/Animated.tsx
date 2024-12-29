@@ -3,12 +3,12 @@ import clsx from "clsx";
 import React from "react";
 import { PiPuzzlePieceFill } from "react-icons/pi";
 import { ContactDocument } from "../../../prismicio-types";
-import { GoogleIcon } from "../../../public/svgs/GoogleIcon";
 import {
   FaGithub,
   FaInstagram,
-  FaLinkedin,
+  FaYoutube,
   FaReddit,
+  FaDiscord,
   FaTwitter,
 } from "react-icons/fa6";
 import { useGSAP } from "@gsap/react";
@@ -21,11 +21,6 @@ const iconObject = {
     color: "#2B3137",
     link: "https://github.com/Hassaan-Shaikh",
   },
-  // LinkedIn: {
-  //   icon: <FaLinkedin />,
-  //   color: "#0077B5",
-  //   link: "https://www.linkedin.com/in/abdurrahman-qureshi-0b16932b3/",
-  // },
   Reddit: {
     icon: <FaReddit />,
     color: "#FF5700",
@@ -36,13 +31,18 @@ const iconObject = {
     color: "#C13584",
     link: "https://www.instagram.com/qabdurrahman",
   },
-  // Gmail: {
-  //   icon: <GoogleIcon />,
-  //   color: "#c71610",
-  //   link: "mailto:scythethroughtheheart05@example.com",
-  // },
   Twitter: {
     icon: <FaTwitter />,
+    color: "#1DA1F2",
+    link: "https://twitter.com/Abdurra05461066",
+  },
+  Discord: {
+    icon: <FaDiscord />,
+    color: "#C13584",
+    link: "https://www.instagram.com/qabdurrahman",
+  },
+  Youtube: {
+    icon: <FaYoutube />,
     color: "#1DA1F2",
     link: "https://twitter.com/Abdurra05461066",
   },
@@ -143,14 +143,7 @@ export default function Animated({ contact }: { contact: ContactDocument }) {
             rel="noopener noreferrer"
             className={clsx(
               "pulsing-icon flex aspect-square shrink-0 items-center justify-center rounded-full border-gray-50/30 bg-blue-50/25 p-4 text-3xl opacity-40 grayscale filter duration-200 hover:cursor-pointer hover:bg-zinc-200 hover:opacity-100 hover:filter-none md:text-4xl lg:text-5xl",
-              {
-                "hover:text-[#2B3137]": item.icon === "Github",
-                "hover:text-[#0077B5]": item.icon === "LinkedIn",
-                "hover:text-[#FF5700]": item.icon === "Reddit",
-                "hover:text-[#C13584]": item.icon === "Instagram",
-                "hover:text-[#c71610]": item.icon === "Gmail",
-                "hover:text-[#1DA1F2]": item.icon === "Twitter",
-              },
+
             )}
           >
             {item.icon && icons[item.icon]?.icon}

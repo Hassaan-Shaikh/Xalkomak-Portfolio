@@ -39,9 +39,9 @@
                   "Reddit",
                   "Github",
                   "Instagram",
-                  "LinkedIn",
                   "Twitter",
-                  "Gmail"
+                  "Discord",
+                  "Youtube"
                 ],
                 "default_value": "Reddit"
               }

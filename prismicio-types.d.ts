@@ -18,7 +18,7 @@ export interface ContactDocumentDataIcongroupItem {
    * - **Documentation**: https://prismic.io/docs/field#select
    */
   icon: prismic.SelectField<
-    "Reddit" | "Github" | "Instagram" | "LinkedIn" | "Twitter" | "Gmail",
+    "Reddit" | "Github" | "Instagram" | "Twitter" | "Discord" | "Youtube",
     "filled"
   >;
 
