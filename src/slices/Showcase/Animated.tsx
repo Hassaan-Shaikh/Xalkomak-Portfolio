@@ -54,7 +54,7 @@ const ShowcaseClient = ({ projectStudies, slice }: ShowcaseClientProps) => {
         {
           slice.primary.labelicon === "rocket" && (
             <>
-            <PiRocketLaunchFill className="mb-4 md:mb-0 md:mr-4" />
+            <PiRocketLaunchFill className="mb-4 md:mb-0 md:mr-4" />;
             </>
           )
         }
