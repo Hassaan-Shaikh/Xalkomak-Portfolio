@@ -10,7 +10,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MdOutlineQuestionMark } from "react-icons/md";
+import { FaRegQuestionCircle } from "react-icons/fa";
 
 type IconName = "snx" | "snapshots" | "dawg" | "misc";
 
@@ -62,7 +62,7 @@ const ShowcaseClient = ({ projectStudies, slice }: ShowcaseClientProps) => {
         {
           slice.primary.labelicon === "qna" && (
             <>
-              <MdOutlineQuestionMark className="mb-4 md:mb-0 md:mr-4" />
+              <FaRegQuestionCircle className="mb-4 md:mb-0 md:mr-4" />
             </>
           )
         }
