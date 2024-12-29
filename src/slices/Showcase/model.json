@@ -81,7 +81,9 @@
                   "options": [
                     "snx",
                     "dawg",
-                    "misc"
+                    "misc",
+                    "blender",
+                    "godot"
                   ],
                   "default_value": "snx"
                 }

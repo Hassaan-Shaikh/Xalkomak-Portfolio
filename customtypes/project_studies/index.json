@@ -35,7 +35,7 @@
         "config": {
           "label": "icon",
           "placeholder": "",
-          "options": ["snx", "snapshots", "dawg", "misc"],
+          "options": ["snx", "snapshots", "dawg", "misc", "blender", "godot"],
           "default_value": "snx"
         }
       },

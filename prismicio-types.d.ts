@@ -287,7 +287,10 @@ interface ProjectStudiesDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#select
    */
-  icon: prismic.SelectField<"snx" | "snapshots" | "dawg" | "misc", "filled">;
+  icon: prismic.SelectField<
+    "snx" | "snapshots" | "dawg" | "misc" | "blender" | "godot",
+    "filled"
+  >;
 
   /**
    * image field in *Project Studies*
@@ -664,7 +667,10 @@ export interface ShowcaseSliceDefaultPrimaryCardsItem {
    * - **API ID Path**: showcase.default.primary.cards[].icon
    * - **Documentation**: https://prismic.io/docs/field#select
    */
-  icon: prismic.SelectField<"snx" | "dawg" | "misc", "filled">;
+  icon: prismic.SelectField<
+    "snx" | "dawg" | "misc" | "blender" | "godot",
+    "filled"
+  >;
 
   /**
    * Image field in *Showcase → Default → Primary → Cards*
