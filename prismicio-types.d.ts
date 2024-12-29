@@ -664,7 +664,7 @@ export interface ShowcaseSliceDefaultPrimaryCardsItem {
    * - **API ID Path**: showcase.default.primary.cards[].icon
    * - **Documentation**: https://prismic.io/docs/field#select
    */
-  icon: prismic.SelectField<"snx" | "snapshots" | "dawg" | "misc", "filled">;
+  icon: prismic.SelectField<"snx" | "dawg" | "misc", "filled">;
 
   /**
    * Image field in *Showcase → Default → Primary → Cards*
@@ -685,6 +685,17 @@ export interface ShowcaseSliceDefaultPrimaryCardsItem {
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
   projectstudy: prismic.ContentRelationshipField<"project_studies">;
+
+  /**
+   * isLinked field in *Showcase → Default → Primary → Cards*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: showcase.default.primary.cards[].islinked
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  islinked: prismic.BooleanField;
 }
 
 /**

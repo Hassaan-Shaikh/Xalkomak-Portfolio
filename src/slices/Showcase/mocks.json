@@ -73,7 +73,7 @@
 								"icon",
 								{
 									"__TYPE__": "FieldContent",
-									"value": "misc",
+									"value": "dawg",
 									"type": "Select"
 								}
 							],
@@ -111,6 +111,13 @@
 										"__TYPE__": "DocumentLink",
 										"id": "mock_document_id"
 									}
+								}
+							],
+							[
+								"islinked",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
 								}
 							]
 						]

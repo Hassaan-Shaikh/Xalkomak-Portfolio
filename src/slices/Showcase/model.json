@@ -80,7 +80,6 @@
                   "placeholder": "",
                   "options": [
                     "snx",
-                    "snapshots",
                     "dawg",
                     "misc"
                   ],
@@ -103,6 +102,15 @@
                   "customtypes": [
                     "project_studies"
                   ]
+                }
+              },
+              "islinked": {
+                "type": "Boolean",
+                "config": {
+                  "label": "isLinked",
+                  "placeholder_false": "false",
+                  "placeholder_true": "true",
+                  "default_value": false
                 }
               }
             }
