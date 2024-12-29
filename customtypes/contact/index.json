@@ -1,0 +1,64 @@
+{
+  "format": "custom",
+  "id": "contact",
+  "label": "Contact",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "heading": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Heading",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        }
+      },
+      "body": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Body",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph"
+        }
+      },
+      "icongroup": {
+        "type": "Group",
+        "config": {
+          "label": "IconGroup",
+          "repeat": true,
+          "fields": {
+            "icon": {
+              "type": "Select",
+              "config": {
+                "label": "Icon",
+                "placeholder": "",
+                "options": [
+                  "Reddit",
+                  "Github",
+                  "Instagram",
+                  "LinkedIn",
+                  "Twitter",
+                  "Gmail"
+                ],
+                "default_value": "Reddit"
+              }
+            },
+            "contact_link": {
+              "type": "Link",
+              "config": {
+                "label": "Contact Link",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "select": null,
+                "allowText": false
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

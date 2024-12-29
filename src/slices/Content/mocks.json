@@ -1,0 +1,20 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Quis non laborum et labore ea pariatur amet labore est fugiat sint Lorem. Nulla enim ex culpa aute in. Dolore id occaecat ex adipisicing minim velit ea."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
