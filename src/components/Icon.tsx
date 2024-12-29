@@ -5,8 +5,9 @@ import { PiGameControllerFill } from "react-icons/pi";
 import { BiLogoBlender } from "react-icons/bi";
 import { SiGodotengine } from "react-icons/si";
 import { LiaToolsSolid } from "react-icons/lia";
+import { FaYoutube } from "react-icons/fa6";
 
-type IconName = "snx" | "snapshots" | "dawg" | "misc" | "blender" | "godot" | "tool";
+type IconName = "snx" | "snapshots" | "dawg" | "misc" | "blender" | "godot" | "tool" | "youtube";
 
 /**
  * Returns the appropriate icon based on the provided name.
@@ -35,6 +36,8 @@ export const IconDisplay = ({
         return <SiGodotengine size={iconSize} />;
       case "tool":
         return <LiaToolsSolid size={iconSize} />;
+      case "youtube":
+        return <FaYoutube size={iconSize} />;
       case "misc":
       default:
         return <FaCog size={iconSize} />;

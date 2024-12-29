@@ -79,13 +79,12 @@
                   "label": "Icon",
                   "placeholder": "",
                   "options": [
-                    "snx",
-                    "dawg",
-                    "misc",
                     "blender",
-                    "godot"
+                    "dawg",
+                    "godot",
+                    "tool"
                   ],
-                  "default_value": "snx"
+                  "default_value": "blender"
                 }
               },
               "image": {

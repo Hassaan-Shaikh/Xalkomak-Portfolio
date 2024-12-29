@@ -663,14 +663,11 @@ export interface ShowcaseSliceDefaultPrimaryCardsItem {
    *
    * - **Field Type**: Select
    * - **Placeholder**: *None*
-   * - **Default Value**: snx
+   * - **Default Value**: blender
    * - **API ID Path**: showcase.default.primary.cards[].icon
    * - **Documentation**: https://prismic.io/docs/field#select
    */
-  icon: prismic.SelectField<
-    "snx" | "dawg" | "misc" | "blender" | "godot",
-    "filled"
-  >;
+  icon: prismic.SelectField<"blender" | "dawg" | "godot" | "tool", "filled">;
 
   /**
    * Image field in *Showcase → Default → Primary → Cards*
