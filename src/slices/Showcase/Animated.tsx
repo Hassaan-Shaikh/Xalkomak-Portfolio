@@ -77,6 +77,7 @@ const ShowcaseClient = ({ projectStudies, slice }: ShowcaseClientProps) => {
               {item.islinked && (
                 <>
                   {item.usesecondarylink && (
+                    <>
                     <PrismicNextLink
                       document={projectStudies[index]}
                       className="mt-4 flex text-white hover:underline"
@@ -84,7 +85,8 @@ const ShowcaseClient = ({ projectStudies, slice }: ShowcaseClientProps) => {
                       Read more about&nbsp;
                       <PrismicRichText field={item.buttontext} />
                       &nbsp; &gt;
-                    </PrismicNextLink>)}
+                    </PrismicNextLink>
+                    </>)}
                   <PrismicNextLink
                     className="mt-6 flex max-w-fit items-center rounded-lg border border-white/20 bg-white/10 px-6 py-3 font-medium text-white backdrop-blur-md transition hover:border-white/30 hover:bg-white/20"
                     field={item.buttonlink}
