@@ -126,6 +126,13 @@
 									"__TYPE__": "BooleanContent",
 									"value": true
 								}
+							],
+							[
+								"useprimarylink",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": false
+								}
 							]
 						]
 					}

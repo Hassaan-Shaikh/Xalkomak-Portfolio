@@ -78,21 +78,23 @@ const ShowcaseClient = ({ projectStudies, slice }: ShowcaseClientProps) => {
                 <>
                   {item.usesecondarylink && (
                     <>
-                    <PrismicNextLink
-                      document={projectStudies[index]}
-                      className="mt-4 flex text-white hover:underline"
-                    >
-                      Read more about&nbsp;
-                      <PrismicRichText field={item.buttontext} />
-                      &nbsp; &gt;
-                    </PrismicNextLink>
+                      <PrismicNextLink
+                        document={projectStudies[index]}
+                        className="mt-4 flex text-white hover:underline"
+                      >
+                        Read more about&nbsp;
+                        <PrismicRichText field={item.buttontext} />
+                        &nbsp; &gt;
+                      </PrismicNextLink>
                     </>)}
-                  <PrismicNextLink
-                    className="mt-6 flex max-w-fit items-center rounded-lg border border-white/20 bg-white/10 px-6 py-3 font-medium text-white backdrop-blur-md transition hover:border-white/30 hover:bg-white/20"
-                    field={item.buttonlink}
-                  >
-                    <PiLinkSimpleBreakLight className="mr-3" size={20} /> Visit Site
-                  </PrismicNextLink>
+                  {item.useprimarylink && (
+                    <PrismicNextLink
+                      className="mt-6 flex max-w-fit items-center rounded-lg border border-white/20 bg-white/10 px-6 py-3 font-medium text-white backdrop-blur-md transition hover:border-white/30 hover:bg-white/20"
+                      field={item.buttonlink}
+                    >
+                      <PiLinkSimpleBreakLight className="mr-3" size={20} /> Visit Site
+                    </PrismicNextLink>
+                  )}
                 </>
               )}
             </div>

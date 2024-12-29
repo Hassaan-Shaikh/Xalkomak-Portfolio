@@ -115,6 +115,15 @@
                   "default_value": false
                 }
               },
+              "useprimarylink": {
+                "type": "Boolean",
+                "config": {
+                  "label": "usePrimaryLink",
+                  "placeholder_false": "false",
+                  "placeholder_true": "true",
+                  "default_value": true
+                }
+              },
               "usesecondarylink": {
                 "type": "Boolean",
                 "config": {

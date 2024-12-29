@@ -704,6 +704,17 @@ export interface ShowcaseSliceDefaultPrimaryCardsItem {
   islinked: prismic.BooleanField;
 
   /**
+   * usePrimaryLink field in *Showcase → Default → Primary → Cards*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: true
+   * - **API ID Path**: showcase.default.primary.cards[].useprimarylink
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  useprimarylink: prismic.BooleanField;
+
+  /**
    * useSecondaryLink field in *Showcase → Default → Primary → Cards*
    *
    * - **Field Type**: Boolean
