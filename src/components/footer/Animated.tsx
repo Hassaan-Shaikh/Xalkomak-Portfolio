@@ -19,13 +19,13 @@ const iconObject = {
   Github: {
     icon: <FaGithub />,
     color: "#2B3137",
-    link: "https://github.com/qarq90",
+    link: "https://github.com/Hassaan-Shaikh",
   },
-  LinkedIn: {
-    icon: <FaLinkedin />,
-    color: "#0077B5",
-    link: "https://www.linkedin.com/in/abdurrahman-qureshi-0b16932b3/",
-  },
+  // LinkedIn: {
+  //   icon: <FaLinkedin />,
+  //   color: "#0077B5",
+  //   link: "https://www.linkedin.com/in/abdurrahman-qureshi-0b16932b3/",
+  // },
   Reddit: {
     icon: <FaReddit />,
     color: "#FF5700",
@@ -36,11 +36,11 @@ const iconObject = {
     color: "#C13584",
     link: "https://www.instagram.com/qabdurrahman",
   },
-  Gmail: {
-    icon: <GoogleIcon />,
-    color: "#c71610",
-    link: "mailto:scythethroughtheheart05@example.com",
-  },
+  // Gmail: {
+  //   icon: <GoogleIcon />,
+  //   color: "#c71610",
+  //   link: "mailto:scythethroughtheheart05@example.com",
+  // },
   Twitter: {
     icon: <FaTwitter />,
     color: "#1DA1F2",

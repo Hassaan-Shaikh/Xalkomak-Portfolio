@@ -48,7 +48,7 @@ export default function Header({ settings }: Props) {
           <div className="md:hidden" />
 
           <Link href="/" className="nav__left group relative ">
-            <h1 className="text-2xl md:text-xl">Abdurrahman Qureshi</h1>
+            <h1 className="text-2xl md:text-xl">Xalkomak</h1>
             <span className="absolute bottom-[-6px] left-1/2 h-0.5 w-0 bg-white transition-all duration-300 ease-out group-hover:left-0 group-hover:w-full"></span>
           </Link>
           <button
