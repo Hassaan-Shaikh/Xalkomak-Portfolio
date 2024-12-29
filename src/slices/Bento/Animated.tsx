@@ -51,7 +51,7 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
   return (
     <div ref={container}>
       <div className="flex flex-col items-center justify-center text-balance text-center text-6xl font-medium md:flex-row md:text-7xl">
-        <div className="bento__heading flex flex-col items-center justify-center text-balance text-center text-6xl font-medium opacity-0 md:flex-row md:text-7xl">
+        <div className="bento__heading flex flex-col items-center justify-center text-balance text-center text-6xl font-medium md:flex-row md:text-7xl">
           <div className="bento__svg">
             <PiFlaskFill className="mb-4 md:mb-0 md:mr-4" />
           </div>
