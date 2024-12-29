@@ -82,7 +82,8 @@
                     "blender",
                     "dawg",
                     "godot",
-                    "tool"
+                    "tool",
+                    "youtube"
                   ],
                   "default_value": "blender"
                 }
@@ -112,6 +113,15 @@
                   "placeholder_false": "false",
                   "placeholder_true": "true",
                   "default_value": false
+                }
+              },
+              "usesecondarylink": {
+                "type": "Boolean",
+                "config": {
+                  "label": "useSecondaryLink",
+                  "placeholder_false": "false",
+                  "placeholder_true": "true",
+                  "default_value": true
                 }
               }
             }

@@ -73,7 +73,7 @@
 								"icon",
 								{
 									"__TYPE__": "FieldContent",
-									"value": "blender",
+									"value": "dawg",
 									"type": "Select"
 								}
 							],
@@ -115,6 +115,13 @@
 							],
 							[
 								"islinked",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
+							],
+							[
+								"usesecondarylink",
 								{
 									"__TYPE__": "BooleanContent",
 									"value": true

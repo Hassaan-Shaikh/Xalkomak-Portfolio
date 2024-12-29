@@ -667,7 +667,10 @@ export interface ShowcaseSliceDefaultPrimaryCardsItem {
    * - **API ID Path**: showcase.default.primary.cards[].icon
    * - **Documentation**: https://prismic.io/docs/field#select
    */
-  icon: prismic.SelectField<"blender" | "dawg" | "godot" | "tool", "filled">;
+  icon: prismic.SelectField<
+    "blender" | "dawg" | "godot" | "tool" | "youtube",
+    "filled"
+  >;
 
   /**
    * Image field in *Showcase → Default → Primary → Cards*
@@ -699,6 +702,17 @@ export interface ShowcaseSliceDefaultPrimaryCardsItem {
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */
   islinked: prismic.BooleanField;
+
+  /**
+   * useSecondaryLink field in *Showcase → Default → Primary → Cards*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: true
+   * - **API ID Path**: showcase.default.primary.cards[].usesecondarylink
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  usesecondarylink: prismic.BooleanField;
 }
 
 /**
