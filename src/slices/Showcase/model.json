@@ -21,6 +21,18 @@
             "single": "heading1"
           }
         },
+        "labelicon": {
+          "type": "Select",
+          "config": {
+            "label": "labelIcon",
+            "placeholder": "",
+            "options": [
+              "rocket",
+              "qna"
+            ],
+            "default_value": "rocket"
+          }
+        },
         "cards": {
           "type": "Group",
           "config": {
@@ -135,18 +147,6 @@
                 }
               }
             }
-          }
-        },
-        "labelicon": {
-          "type": "Select",
-          "config": {
-            "label": "labelIcon",
-            "placeholder": "",
-            "options": [
-              "rocket",
-              "qna"
-            ],
-            "default_value": "rocket"
           }
         }
       },

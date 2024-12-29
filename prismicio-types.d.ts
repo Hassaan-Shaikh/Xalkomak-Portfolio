@@ -741,16 +741,6 @@ export interface ShowcaseSliceDefaultPrimary {
   heading: prismic.TitleField;
 
   /**
-   * Cards field in *Showcase → Default → Primary*
-   *
-   * - **Field Type**: Group
-   * - **Placeholder**: *None*
-   * - **API ID Path**: showcase.default.primary.cards[]
-   * - **Documentation**: https://prismic.io/docs/field#group
-   */
-  cards: prismic.GroupField<Simplify<ShowcaseSliceDefaultPrimaryCardsItem>>;
-
-  /**
    * labelIcon field in *Showcase → Default → Primary*
    *
    * - **Field Type**: Select
@@ -760,6 +750,16 @@ export interface ShowcaseSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#select
    */
   labelicon: prismic.SelectField<"rocket" | "qna", "filled">;
+
+  /**
+   * Cards field in *Showcase → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: showcase.default.primary.cards[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  cards: prismic.GroupField<Simplify<ShowcaseSliceDefaultPrimaryCardsItem>>;
 }
 
 /**
