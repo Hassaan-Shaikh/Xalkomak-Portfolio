@@ -73,7 +73,7 @@
 								"icon",
 								{
 									"__TYPE__": "FieldContent",
-									"value": "dawg",
+									"value": "blender",
 									"type": "Select"
 								}
 							],
@@ -148,6 +148,11 @@
 						}
 					}
 				]
+			},
+			"labelicon": {
+				"__TYPE__": "FieldContent",
+				"value": "rocket",
+				"type": "Select"
 			}
 		},
 		"items": []

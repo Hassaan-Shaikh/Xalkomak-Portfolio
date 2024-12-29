@@ -668,7 +668,7 @@ export interface ShowcaseSliceDefaultPrimaryCardsItem {
    * - **Documentation**: https://prismic.io/docs/field#select
    */
   icon: prismic.SelectField<
-    "blender" | "dawg" | "godot" | "tool" | "youtube",
+    "blender" | "dawg" | "godot" | "tool" | "youtube" | "linktree",
     "filled"
   >;
 
@@ -749,6 +749,17 @@ export interface ShowcaseSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   cards: prismic.GroupField<Simplify<ShowcaseSliceDefaultPrimaryCardsItem>>;
+
+  /**
+   * labelIcon field in *Showcase → Default → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: rocket
+   * - **API ID Path**: showcase.default.primary.labelicon
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  labelicon: prismic.SelectField<"rocket" | "qna", "filled">;
 }
 
 /**

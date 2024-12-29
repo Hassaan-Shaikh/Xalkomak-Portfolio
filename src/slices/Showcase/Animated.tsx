@@ -51,7 +51,13 @@ const ShowcaseClient = ({ projectStudies, slice }: ShowcaseClientProps) => {
         ref={titleRef}
         className="showcase__heading mb-8 flex flex-col items-center justify-center text-balance text-center text-6xl font-medium md:flex-row md:text-7xl"
       >
-        <PiRocketLaunchFill className="mb-4 md:mb-0 md:mr-4" />
+        {
+          slice.primary.labelicon === "rocket" && (
+            <>
+            <PiRocketLaunchFill className="mb-4 md:mb-0 md:mr-4" />
+            </>
+          )
+        }
         <PrismicRichText field={slice.primary.heading} />
       </div>
       <div className="flex flex-col">

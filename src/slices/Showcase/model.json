@@ -83,7 +83,8 @@
                     "dawg",
                     "godot",
                     "tool",
-                    "youtube"
+                    "youtube",
+                    "linktree"
                   ],
                   "default_value": "blender"
                 }
@@ -134,6 +135,18 @@
                 }
               }
             }
+          }
+        },
+        "labelicon": {
+          "type": "Select",
+          "config": {
+            "label": "labelIcon",
+            "placeholder": "",
+            "options": [
+              "rocket",
+              "qna"
+            ],
+            "default_value": "rocket"
           }
         }
       },
