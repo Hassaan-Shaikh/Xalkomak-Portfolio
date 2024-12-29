@@ -708,7 +708,7 @@ export interface ShowcaseSliceDefaultPrimaryCardsItem {
    *
    * - **Field Type**: Boolean
    * - **Placeholder**: *None*
-   * - **Default Value**: true
+   * - **Default Value**: false
    * - **API ID Path**: showcase.default.primary.cards[].usesecondarylink
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */

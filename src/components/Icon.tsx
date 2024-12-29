@@ -6,8 +6,9 @@ import { BiLogoBlender } from "react-icons/bi";
 import { SiGodotengine } from "react-icons/si";
 import { LiaToolsSolid } from "react-icons/lia";
 import { FaYoutube } from "react-icons/fa6";
+import { PiLinktreeLogoBold } from "react-icons/pi";
 
-type IconName = "snx" | "snapshots" | "dawg" | "misc" | "blender" | "godot" | "tool" | "youtube";
+type IconName = "snx" | "snapshots" | "dawg" | "misc" | "blender" | "godot" | "tool" | "youtube" | "linktree";
 
 /**
  * Returns the appropriate icon based on the provided name.
@@ -38,6 +39,8 @@ export const IconDisplay = ({
         return <LiaToolsSolid size={iconSize} />;
       case "youtube":
         return <FaYoutube size={iconSize} />;
+      case "linktree":
+        return <PiLinktreeLogoBold size={iconSize} />;
       case "misc":
       default:
         return <FaCog size={iconSize} />;

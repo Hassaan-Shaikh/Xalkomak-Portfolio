@@ -121,7 +121,7 @@
                   "label": "useSecondaryLink",
                   "placeholder_false": "false",
                   "placeholder_true": "true",
-                  "default_value": true
+                  "default_value": false
                 }
               }
             }
