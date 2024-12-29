@@ -17,6 +17,9 @@ export default async function Footer() {
           <PrismicRichText field={contact.data.heading} />
         </div>
         <Animated contact={contact} />
+        <div>
+          <p className="opacity-50">Coded By: scythethroughtheheart05@gmail.com</p>
+        </div>
       </footer>
     </>
   );
