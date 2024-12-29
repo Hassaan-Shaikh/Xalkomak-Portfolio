@@ -19,7 +19,7 @@ export default async function Footer() {
         <Animated contact={contact} />
         <div>
           <p className="opacity-50">Contact Mail: <a href="mailto:hassaansk786@gmail.com">hassaansk786@gmail.com</a></p>
-          <p className="opacity-50">Coded By: <a href="mailto:scythethroughtheheart05@gmail.com"></a>scythethroughtheheart05@gmail.com</p>
+          <p className="opacity-50">Coded By: <a href="mailto:scythethroughtheheart05@gmail.com">scythethroughtheheart05@gmail.com</a></p>
         </div>
       </footer>
     </>
