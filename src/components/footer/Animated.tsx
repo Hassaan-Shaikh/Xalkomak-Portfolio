@@ -24,27 +24,27 @@ const iconObject = {
   Reddit: {
     icon: <FaReddit />,
     color: "#FF5700",
-    link: "https://reddit.com/user/your-profile",
+    link: "https://www.reddit.com/user/Xill_K47/",
   },
   Instagram: {
     icon: <FaInstagram />,
     color: "#C13584",
-    link: "https://www.instagram.com/qabdurrahman",
+    link: "https://www.instagram.com/xalkomak347",
   },
   Twitter: {
     icon: <FaTwitter />,
     color: "#1DA1F2",
-    link: "https://twitter.com/Abdurra05461066",
+    link: "https://x.com/XalkomakCreates",
   },
   Discord: {
     icon: <FaDiscord />,
     color: "#C13584",
-    link: "https://www.instagram.com/qabdurrahman",
+    link: "https://discord.gg/58cHsjygZe",
   },
   Youtube: {
     icon: <FaYoutube />,
     color: "#1DA1F2",
-    link: "https://twitter.com/Abdurra05461066",
+    link: "https://www.youtube.com/@Xalkomak347",
   },
 };
 
