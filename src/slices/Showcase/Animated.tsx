@@ -52,19 +52,17 @@ const ShowcaseClient = ({ projectStudies, slice }: ShowcaseClientProps) => {
         ref={titleRef}
         className="showcase__heading mb-8 flex flex-col items-center justify-center text-balance text-center text-6xl font-medium md:flex-row md:text-7xl"
       >
-                <IconDisplay iconName={slice.primary.labelicon as IconName} iconSize={32} />
-
         {
           slice.primary.labelicon === "rocket" && (
             <>
-            <PiRocketLaunchFill className="mb-4 md:mb-0 md:mr-4" />
+              <PiRocketLaunchFill className="mb-4 md:mb-0 md:mr-4" />
             </>
           )
         }
         {
           slice.primary.labelicon === "qna" && (
             <>
-            <MdOutlineQuestionMark className="mb-4 md:mb-0 md:mr-4" />
+              <MdOutlineQuestionMark className="mb-4 md:mb-0 md:mr-4" />
             </>
           )
         }
