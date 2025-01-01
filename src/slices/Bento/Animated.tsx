@@ -52,9 +52,9 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
     <div ref={container}>
       <div className="flex flex-col items-center justify-center text-balance text-center text-6xl font-medium md:flex-row md:text-7xl">
         <div className="bento__heading flex flex-col items-center justify-center text-balance text-center text-6xl font-medium md:flex-row md:text-7xl">
-          <div className="bento__svg">
+          {/* <div className="bento__svg">
             <PiFlaskFill className="mb-4 md:mb-0 md:mr-4" />
-          </div>
+          </div> */}
           <PrismicRichText
             field={slice.primary.heading}
             components={{
@@ -73,7 +73,7 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
         </div>
       </div>
 
-      <div className="mb-16 flex text-balance text-center text-6xl font-medium md:text-7xl">
+      <div className="mb-16 flex text-balance text-center text-6xl font-medium md:text-3xl">
         <PrismicRichText field={slice.primary.body} />
       </div>
 
@@ -96,9 +96,10 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
             <div className="flex items-center gap-4">
               <PrismicNextImage
                 field={item.image_a}
-                className="mx-auto max-h-36 w-auto"
+                className="mx-auto max-h-16 w-auto my-4"
                 alt=""
                 fallback=""
+                sizes="(max-width: 64px) 50vw, 30vw"
               />
               {item.wide && (
                 <PrismicNextImage
@@ -106,6 +107,7 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
                   className="hidden max-h-36 w-auto md:block"
                   alt=""
                   fallback=""
+                  
                 />
               )}
             </div>

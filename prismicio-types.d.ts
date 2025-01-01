@@ -177,7 +177,11 @@ export type NavbarDocument<Lang extends string = string> =
     Lang
   >;
 
-type PageDocumentDataSlicesSlice = ShowcaseSlice | BentoSlice | HeroSlice;
+type PageDocumentDataSlicesSlice =
+  | GallerySlice
+  | ShowcaseSlice
+  | BentoSlice
+  | HeroSlice;
 
 /**
  * Content for Page documents
@@ -542,6 +546,110 @@ export type ContentSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Item in *Gallery → Default → Primary → Carousel*
+ */
+export interface GallerySliceDefaultPrimaryCarouselItem {
+  /**
+   * GalleryImage field in *Gallery → Default → Primary → Carousel*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gallery.default.primary.carousel[].galleryimage
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  galleryimage: prismic.ImageField<never>;
+
+  /**
+   * Caption field in *Gallery → Default → Primary → Carousel*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gallery.default.primary.carousel[].caption
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  caption: prismic.RichTextField;
+
+  /**
+   * GalleryVariation field in *Gallery → Default → Primary → Carousel*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gallery.default.primary.carousel[].galleryvariation
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  galleryvariation: prismic.SelectField<
+    "Potrait" | "Landscape" | "Square" | "BigSquare"
+  >;
+}
+
+/**
+ * Primary content in *Gallery → Default → Primary*
+ */
+export interface GallerySliceDefaultPrimary {
+  /**
+   * Title field in *Gallery → Default → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gallery.default.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.TitleField;
+
+  /**
+   * Body field in *Gallery → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gallery.default.primary.body
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+
+  /**
+   * Carousel field in *Gallery → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gallery.default.primary.carousel[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  carousel: prismic.GroupField<
+    Simplify<GallerySliceDefaultPrimaryCarouselItem>
+  >;
+}
+
+/**
+ * Default variation for Gallery Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type GallerySliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<GallerySliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Gallery*
+ */
+type GallerySliceVariation = GallerySliceDefault;
+
+/**
+ * Gallery Shared Slice
+ *
+ * - **API ID**: `gallery`
+ * - **Description**: Gallery
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type GallerySlice = prismic.SharedSlice<
+  "gallery",
+  GallerySliceVariation
+>;
+
+/**
  * Primary content in *Hero → Default → Primary*
  */
 export interface HeroSliceDefaultPrimary {
@@ -835,6 +943,11 @@ declare module "@prismicio/client" {
       ContentSliceDefaultPrimary,
       ContentSliceVariation,
       ContentSliceDefault,
+      GallerySlice,
+      GallerySliceDefaultPrimaryCarouselItem,
+      GallerySliceDefaultPrimary,
+      GallerySliceVariation,
+      GallerySliceDefault,
       HeroSlice,
       HeroSliceDefaultPrimary,
       HeroSliceVariation,
