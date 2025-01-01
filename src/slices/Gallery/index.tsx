@@ -12,7 +12,7 @@ export type GalleryProps = SliceComponentProps<Content.GallerySlice>;
  * Component for "Gallery" Slices.
  */
 const Gallery = ({ slice }: GalleryProps): JSX.Element => {
-  console.log(slice.primary.carousel);
+  
   return (
     <section
       className="container mx-auto flex w-full max-w-6xl flex-col items-center justify-start gap-3 px-4 py-16 text-white first:pt-10 md:px-6 md:py-20 lg:py-24"
