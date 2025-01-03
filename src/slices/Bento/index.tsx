@@ -12,7 +12,6 @@ export type BentoProps = SliceComponentProps<Content.BentoSlice>;
  * Component for "Bento" Slices.
  */
 const Bento = ({ slice }: BentoProps): JSX.Element => {
-  console.log(slice.variation)
   return (
     <section
       className="container mx-auto flex max-w-5xl flex-col items-center justify-start gap-3 py-16"
