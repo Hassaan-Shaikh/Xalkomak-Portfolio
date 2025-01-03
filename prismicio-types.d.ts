@@ -436,6 +436,94 @@ export interface BentoSliceDefaultPrimaryCardItem {
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
   project_link: prismic.LinkField;
+
+  /**
+   * IsNotHidden field in *Bento → Default → Primary → Card*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: true
+   * - **API ID Path**: bento.default.primary.card[].isnothidden
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  isnothidden: prismic.BooleanField;
+}
+
+/**
+ * Item in *Bento → IconOnTop → Primary → Card*
+ */
+export interface BentoSliceIconOnTopPrimaryCardItem {
+  /**
+   * ImageA field in *Bento → IconOnTop → Primary → Card*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: bento.iconOnTop.primary.card[].image_a
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image_a: prismic.ImageField<never>;
+
+  /**
+   * ImageB field in *Bento → IconOnTop → Primary → Card*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: bento.iconOnTop.primary.card[].image_b
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image_b: prismic.ImageField<never>;
+
+  /**
+   * Title field in *Bento → IconOnTop → Primary → Card*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: bento.iconOnTop.primary.card[].title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Body field in *Bento → IconOnTop → Primary → Card*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: bento.iconOnTop.primary.card[].body
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+
+  /**
+   * Wide field in *Bento → IconOnTop → Primary → Card*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: bento.iconOnTop.primary.card[].wide
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  wide: prismic.BooleanField;
+
+  /**
+   * project_link field in *Bento → IconOnTop → Primary → Card*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: bento.iconOnTop.primary.card[].project_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  project_link: prismic.LinkField;
+
+  /**
+   * IsNotHidden field in *Bento → IconOnTop → Primary → Card*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: true
+   * - **API ID Path**: bento.iconOnTop.primary.card[].isnothidden
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  isnothidden: prismic.BooleanField;
 }
 
 /**
@@ -487,9 +575,57 @@ export type BentoSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *Bento → IconOnTop → Primary*
+ */
+export interface BentoSliceIconOnTopPrimary {
+  /**
+   * Heading field in *Bento → IconOnTop → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: bento.iconOnTop.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.RichTextField;
+
+  /**
+   * Body field in *Bento → IconOnTop → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: bento.iconOnTop.primary.body
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+
+  /**
+   * Card field in *Bento → IconOnTop → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: bento.iconOnTop.primary.card[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  card: prismic.GroupField<Simplify<BentoSliceIconOnTopPrimaryCardItem>>;
+}
+
+/**
+ * IconOnTop variation for Bento Slice
+ *
+ * - **API ID**: `iconOnTop`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BentoSliceIconOnTop = prismic.SharedSliceVariation<
+  "iconOnTop",
+  Simplify<BentoSliceIconOnTopPrimary>,
+  never
+>;
+
+/**
  * Slice variation for *Bento*
  */
-type BentoSliceVariation = BentoSliceDefault;
+type BentoSliceVariation = BentoSliceDefault | BentoSliceIconOnTop;
 
 /**
  * Bento Shared Slice
@@ -937,8 +1073,11 @@ declare module "@prismicio/client" {
       BentoSlice,
       BentoSliceDefaultPrimaryCardItem,
       BentoSliceDefaultPrimary,
+      BentoSliceIconOnTopPrimaryCardItem,
+      BentoSliceIconOnTopPrimary,
       BentoSliceVariation,
       BentoSliceDefault,
+      BentoSliceIconOnTop,
       ContentSlice,
       ContentSliceDefaultPrimary,
       ContentSliceVariation,
