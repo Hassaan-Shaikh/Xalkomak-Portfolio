@@ -130,7 +130,7 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
               <PrismicNextLink
                 field={item.project_link}
                 className={clsx(
-                  "bento__card glass-container row-span-3 grid grid-rows-subgrid gap-4 rounded-lg p-4 not-italic text-white",
+                  "bg-[#2b292c] row-span-3 border-2 border-[#8f00ff] grid grid-rows-subgrid gap-4 rounded-lg p-4 not-italic text-white",
                   item.wide ? "md:col-span-2" : "md:col-span-1",
                 )}
                 key={index}
@@ -152,10 +152,10 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
                     />
                   )}
                 </div>
-                <div className="text-2xl text-white text-center">
+                <div className="text-2xl text-[#6aff00] text-center">
                   <PrismicRichText field={item.title} />
                 </div>
-                <div className="max-w-md text-white text-center">
+                <div className="max-w-md text-[#6aff00] text-center">
                   <PrismicRichText field={item.body} />
                 </div>
 
