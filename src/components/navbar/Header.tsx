@@ -91,7 +91,7 @@ export default function Header({ settings }: Props) {
                   </li>
                 </div>
               ))}
-              <li className="group relative list-none">
+              {/* <li className="group relative list-none">
                 <a
                   href="#contact"
                   className="text-2xl font-medium transition-colors group-hover:text-white"
@@ -99,7 +99,7 @@ export default function Header({ settings }: Props) {
                   Contact
                 </a>
                 <span className="absolute bottom-[-6px] left-1/2 h-0.5 w-0 bg-white transition-all duration-300 ease-out group-hover:left-0 group-hover:w-full"></span>
-              </li>
+              </li> */}
             </div>
           </button>
         </div>
@@ -118,7 +118,7 @@ export default function Header({ settings }: Props) {
                 <span className="absolute bottom-[-6px] left-1/2 h-0.5 w-0 bg-white transition-all duration-300 ease-out group-hover:left-0 group-hover:w-full"></span>
               </li>
             ))}
-          <li className="group relative">
+          {/* <li className="group relative">
             <a
               href="#contact"
               className="text-lg font-medium transition-colors group-hover:text-white"
@@ -126,7 +126,7 @@ export default function Header({ settings }: Props) {
               Contact
             </a>
             <span className="absolute bottom-[-6px] left-1/2 h-0.5 w-0 bg-white transition-all duration-300 ease-out group-hover:left-0 group-hover:w-full"></span>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

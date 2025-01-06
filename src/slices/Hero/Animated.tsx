@@ -50,19 +50,22 @@ export default function Animated({ slice }: { slice: Content.HeroSlice }) {
       ref={container}
       className="container mx-auto flex max-w-5xl flex-col items-center justify-start gap-3 py-16"
     >
-      <div className="hero__heading flex flex-col items-center justify-center text-balance text-center text-6xl font-medium  md:flex-row md:text-7xl">
+      <div className="hero__heading flex flex-col items-center justify-center text-balance text-center text-6xl font-medium md:flex-row md:text-7xl">
         <div className="hero__svg">
-          <PiHandWavingFill className="mb-4 mr-4 md:mb-0" />
+          <PiHandWavingFill className="mb-4 mx-4 md:mb-0" />
         </div>
         <PrismicRichText field={slice.primary.heading} />
+        <div className="hero__svg">
+          <PiHandWavingFill className="mb-4 mx-4 md:mb-0" />
+        </div>
       </div>
-      <div className="hero__body mx-auto mt-4 text-balance text-center text-2xl text-white ">
+      <div className="hero__body mx-auto mt-4 text-balance text-center text-2xl text-white">
         <PrismicRichText field={slice.primary.body} />
       </div>
-      <div className="hero__image glass-container-pfp mt-8 w-fit ">
-        <div className="hero__border absolute inset-0 -z-10 rounded-full bg-[#fff]/75  blur-2xl filter" />
+      <div className="hero__image glass-container-pfp mt-8 w-fit">
+        <div className="hero__border absolute inset-0 -z-10 rounded-full bg-[#fff]/75 blur-2xl filter" />
         <PrismicNextImage
-          className="max-w-72 rounded-full"
+          className="max-w-64 rounded-full"
           field={slice.primary.image}
           alt=""
           fallback=""

@@ -20,20 +20,21 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="container relative mx-auto mb-12 flex w-full max-w-6xl flex-col items-center justify-start gap-3 px-4 py-16 text-white first:pt-10 md:px-6">
+      <footer className="container relative  flex w-full flex-col items-center justify-start  text-white first:pt-10 ">
         <div className="relative">
           <div className="opacity-50">
-            {token === 1 && (
-              <Image src={dawg_a} width={1280} height={200} alt="image" />
+            <Image src={dawg_c} alt="image" />
+            {/* {token === 1 && (
+              <Image src={dawg_a} width={1920} alt="image" />
             )}
             {token === 2 && (
-              <Image src={dawg_b} width={1280} height={200} alt="image" />
+              <Image src={dawg_b} width={1920} alt="image" />
             )}
             {token === 3 && (
-              <Image src={dawg_c} width={1280} height={200} alt="image" />
-            )}
+              <Image src={dawg_c} width={1920} alt="image" />
+            )} */}
           </div>
-          <div className="absolute inset-0 m-auto top-1/2 text-center text-2xl text-white">
+          <div className="absolute inset-0 top-1/2 m-auto text-center text-2xl text-white">
             <p className="">
               Contact Mail:{" "}
               <a href="mailto:hassaansk786@gmail.com">hassaansk786@gmail.com</a>

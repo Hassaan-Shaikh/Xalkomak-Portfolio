@@ -1,7 +1,7 @@
 {
   "format": "page",
   "id": "project_studies",
-  "label": "Project Studies",
+  "label": "Projects",
   "repeatable": true,
   "status": true,
   "json": {

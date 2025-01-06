@@ -178,6 +178,7 @@ export type NavbarDocument<Lang extends string = string> =
   >;
 
 type PageDocumentDataSlicesSlice =
+  | ContentSlice
   | GallerySlice
   | ShowcaseSlice
   | BentoSlice
@@ -256,11 +257,11 @@ export type PageDocument<Lang extends string = string> =
 type ProjectStudiesDocumentDataSlicesSlice = ContentSlice;
 
 /**
- * Content for Project Studies documents
+ * Content for Projects documents
  */
 interface ProjectStudiesDocumentData {
   /**
-   * Project field in *Project Studies*
+   * Project field in *Projects*
    *
    * - **Field Type**: Title
    * - **Placeholder**: *None*
@@ -271,7 +272,7 @@ interface ProjectStudiesDocumentData {
   project: prismic.TitleField;
 
   /**
-   * Description field in *Project Studies*
+   * Description field in *Projects*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
@@ -282,7 +283,7 @@ interface ProjectStudiesDocumentData {
   description: prismic.RichTextField;
 
   /**
-   * icon field in *Project Studies*
+   * icon field in *Projects*
    *
    * - **Field Type**: Select
    * - **Placeholder**: *None*
@@ -297,7 +298,7 @@ interface ProjectStudiesDocumentData {
   >;
 
   /**
-   * image field in *Project Studies*
+   * image field in *Projects*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
@@ -308,7 +309,7 @@ interface ProjectStudiesDocumentData {
   image: prismic.ImageField<never>;
 
   /**
-   * Slice Zone field in *Project Studies*
+   * Slice Zone field in *Projects*
    *
    * - **Field Type**: Slice Zone
    * - **Placeholder**: *None*
@@ -317,7 +318,7 @@ interface ProjectStudiesDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
   slices: prismic.SliceZone<ProjectStudiesDocumentDataSlicesSlice> /**
-   * Meta Title field in *Project Studies*
+   * Meta Title field in *Projects*
    *
    * - **Field Type**: Text
    * - **Placeholder**: A title of the page used for social media and search engines
@@ -328,7 +329,7 @@ interface ProjectStudiesDocumentData {
   meta_title: prismic.KeyTextField;
 
   /**
-   * Meta Description field in *Project Studies*
+   * Meta Description field in *Projects*
    *
    * - **Field Type**: Text
    * - **Placeholder**: A brief summary of the page
@@ -339,7 +340,7 @@ interface ProjectStudiesDocumentData {
   meta_description: prismic.KeyTextField;
 
   /**
-   * Meta Image field in *Project Studies*
+   * Meta Image field in *Projects*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
@@ -351,7 +352,7 @@ interface ProjectStudiesDocumentData {
 }
 
 /**
- * Project Studies document from Prismic
+ * Projects document from Prismic
  *
  * - **API ID**: `project_studies`
  * - **Repeatable**: `true`
