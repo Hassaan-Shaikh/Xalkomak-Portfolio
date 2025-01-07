@@ -58,14 +58,6 @@
 								}
 							],
 							[
-								"galleryvariation",
-								{
-									"__TYPE__": "FieldContent",
-									"value": "Potrait",
-									"type": "Select"
-								}
-							],
-							[
 								"caption",
 								{
 									"__TYPE__": "StructuredTextContent",

@@ -53,19 +53,6 @@
                   "multi": "paragraph"
                 }
               },
-              "galleryvariation": {
-                "type": "Select",
-                "config": {
-                  "label": "GalleryVariation",
-                  "placeholder": "",
-                  "options": [
-                    "Potrait",
-                    "Landscape",
-                    "Square",
-                    "BigSquare"
-                  ]
-                }
-              },
               "rowspan": {
                 "type": "Number",
                 "config": {

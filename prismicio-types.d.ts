@@ -707,18 +707,6 @@ export interface GallerySliceDefaultPrimaryCarouselItem {
   caption: prismic.RichTextField;
 
   /**
-   * GalleryVariation field in *Gallery → Default → Primary → Carousel*
-   *
-   * - **Field Type**: Select
-   * - **Placeholder**: *None*
-   * - **API ID Path**: gallery.default.primary.carousel[].galleryvariation
-   * - **Documentation**: https://prismic.io/docs/field#select
-   */
-  galleryvariation: prismic.SelectField<
-    "Potrait" | "Landscape" | "Square" | "BigSquare"
-  >;
-
-  /**
    * RowSpan field in *Gallery → Default → Primary → Carousel*
    *
    * - **Field Type**: Number
