@@ -65,6 +65,20 @@
                     "BigSquare"
                   ]
                 }
+              },
+              "rowspan": {
+                "type": "Number",
+                "config": {
+                  "label": "RowSpan",
+                  "placeholder": "Row Span"
+                }
+              },
+              "colspan": {
+                "type": "Number",
+                "config": {
+                  "label": "ColSpan",
+                  "placeholder": "1"
+                }
               }
             }
           }

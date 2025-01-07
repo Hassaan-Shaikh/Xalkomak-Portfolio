@@ -78,6 +78,22 @@
 										}
 									]
 								}
+							],
+							[
+								"rowspan",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "77",
+									"type": "Number"
+								}
+							],
+							[
+								"colspan",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "41",
+									"type": "Number"
+								}
 							]
 						]
 					}

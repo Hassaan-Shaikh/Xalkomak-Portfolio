@@ -717,6 +717,26 @@ export interface GallerySliceDefaultPrimaryCarouselItem {
   galleryvariation: prismic.SelectField<
     "Potrait" | "Landscape" | "Square" | "BigSquare"
   >;
+
+  /**
+   * RowSpan field in *Gallery → Default → Primary → Carousel*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Row Span
+   * - **API ID Path**: gallery.default.primary.carousel[].rowspan
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  rowspan: prismic.NumberField;
+
+  /**
+   * ColSpan field in *Gallery → Default → Primary → Carousel*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: 1
+   * - **API ID Path**: gallery.default.primary.carousel[].colspan
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  colspan: prismic.NumberField;
 }
 
 /**
