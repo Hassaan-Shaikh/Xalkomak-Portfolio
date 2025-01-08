@@ -89,10 +89,10 @@
                   "allowText": false
                 }
               },
-              "isnothidden": {
+              "rendertile": {
                 "type": "Boolean",
                 "config": {
-                  "label": "IsNotHidden",
+                  "label": "RenderTile",
                   "placeholder_false": "false",
                   "placeholder_true": "true",
                   "default_value": true
@@ -136,19 +136,14 @@
             "label": "Card",
             "repeat": true,
             "fields": {
-              "image_a": {
+              "image": {
                 "type": "Image",
                 "config": {
-                  "label": "ImageA",
-                  "constraint": {},
-                  "thumbnails": []
-                }
-              },
-              "image_b": {
-                "type": "Image",
-                "config": {
-                  "label": "ImageB",
-                  "constraint": {},
+                  "label": "Image",
+                  "constraint": {
+                    "width": null,
+                    "height": null
+                  },
                   "thumbnails": []
                 }
               },
@@ -170,29 +165,20 @@
                   "single": "paragraph"
                 }
               },
-              "wide": {
-                "type": "Boolean",
-                "config": {
-                  "label": "Wide",
-                  "placeholder_false": "false",
-                  "placeholder_true": "true",
-                  "default_value": false
-                }
-              },
-              "project_link": {
+              "pagelink": {
                 "type": "Link",
                 "config": {
-                  "label": "project_link",
-                  "placeholder": "",
+                  "label": "PageLink",
+                  "placeholder": "Link To Platform",
                   "allowTargetBlank": true,
                   "select": null,
                   "allowText": false
                 }
               },
-              "isnothidden": {
+              "rendertile": {
                 "type": "Boolean",
                 "config": {
-                  "label": "IsNotHidden",
+                  "label": "RenderTile",
                   "placeholder_false": "false",
                   "placeholder_true": "true",
                   "default_value": true

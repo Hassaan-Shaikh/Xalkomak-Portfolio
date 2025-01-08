@@ -73,7 +73,7 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
         </div>
       </div>
 
-      <div className="mb-16 mt-4 flex flex-col items-center text-balance text-center text-6xl font-medium md:text-3xl">
+      <div className="mb-16 mt-4 flex flex-col items-center text-balance text-center text-xl font-medium md:text-xl">
         <PrismicRichText field={slice.primary.body} />
       </div>
 
@@ -81,7 +81,7 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
         <>
           <div className="m-6 grid max-w-4xl grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-10">
             {slice.primary.card.map((item, index) =>
-              item.isnothidden && ( // Check the boolean condition here
+              item.rendertile && ( // Check the boolean condition here
                 <PrismicNextLink
                   field={item.project_link}
                   className={clsx(
@@ -123,39 +123,30 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
 
       }
       {slice.variation === "iconOnTop" && (
-        <div className="m-6 grid max-w-4xl grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-10">
+        <div className="m-6 grid max-w-5xl grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-10">
           {slice.primary.card.map((item, index) =>
-            item.isnothidden && (
+            item.rendertile && (
 
               <PrismicNextLink
-                field={item.project_link}
+                field={item.pagelink}
                 className={clsx(
-                  "bento__card glass-container row-span-3 border-2 border-[#8f00ff] grid grid-rows-subgrid gap-4 rounded-lg p-4 not-italic text-white",
-                  item.wide ? "md:col-span-2" : "md:col-span-1",
+                  "bento__card glass-container row-span-3 border-2 border-[#521b7c] grid grid-rows-subgrid md:col-span-1 gap-4 rounded-lg p-4 not-italic text-white hover:underline",
                 )}
                 key={index}
               >
                 <div className="flex items-center gap-4">
                   <PrismicNextImage
-                    field={item.image_a}
+                    field={item.image}
                     className="mx-auto max-h-16 w-auto my-4"
                     alt=""
                     fallback=""
-                    sizes="(max-width: 64px) 50vw, 30vw"
+                    //sizes="(max-width: 128px) 50vw, 30vw"
                   />
-                  {item.wide && (
-                    <PrismicNextImage
-                      field={item.image_b}
-                      className="hidden max-h-36 w-auto md:block"
-                      alt=""
-                      fallback=""
-                    />
-                  )}
                 </div>
-                <div className="text-2xl text-[#6aff00] text-center">
+                <div className="text-2xl text-white text-center underline">
                   <PrismicRichText field={item.title} />
                 </div>
-                <div className="max-w-md text-[#6aff00] text-center">
+                <div className="max-w-md text-white text-center">
                   <PrismicRichText field={item.body} />
                 </div>
 

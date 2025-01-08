@@ -12,11 +12,10 @@ export type GalleryProps = SliceComponentProps<Content.GallerySlice>;
  * Component for "Gallery" Slices.
  */
 const Gallery = ({ slice }: GalleryProps): JSX.Element => {
-  
   return (
     <section
       className="container mx-auto flex w-full max-w-8xl flex-col items-center justify-start gap-3 px-4 py-16 text-white first:pt-10 md:px-6 md:py-20 lg:py-24"
-
+      
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
@@ -26,7 +25,7 @@ const Gallery = ({ slice }: GalleryProps): JSX.Element => {
         <PrismicRichText field={slice.primary.title} />
       </div>
       <div
-        className="grid gap-4 md:grid-cols-4 md:gap-6">
+        className="grid gap-2 grid-cols-4">
         {
           slice.primary.carousel.map((item, index) => (
             
@@ -43,10 +42,10 @@ const Gallery = ({ slice }: GalleryProps): JSX.Element => {
                       field={item.galleryimage}
                       alt=""
                       fallback=""
-                      //sizes="(max-width: 512px) 50vw, 30vw" 
+                      sizes="(max-width: 128px) 50vw, 30vw" 
                       />
               <div
-                className="mt-2 mx-6">
+                className="mt-1 mx-4 text-xs">
 
                 <PrismicRichText field={item.caption} />
               </div>

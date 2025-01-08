@@ -439,15 +439,15 @@ export interface BentoSliceDefaultPrimaryCardItem {
   project_link: prismic.LinkField;
 
   /**
-   * IsNotHidden field in *Bento → Default → Primary → Card*
+   * RenderTile field in *Bento → Default → Primary → Card*
    *
    * - **Field Type**: Boolean
    * - **Placeholder**: *None*
    * - **Default Value**: true
-   * - **API ID Path**: bento.default.primary.card[].isnothidden
+   * - **API ID Path**: bento.default.primary.card[].rendertile
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */
-  isnothidden: prismic.BooleanField;
+  rendertile: prismic.BooleanField;
 }
 
 /**
@@ -455,24 +455,14 @@ export interface BentoSliceDefaultPrimaryCardItem {
  */
 export interface BentoSliceIconOnTopPrimaryCardItem {
   /**
-   * ImageA field in *Bento → IconOnTop → Primary → Card*
+   * Image field in *Bento → IconOnTop → Primary → Card*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: bento.iconOnTop.primary.card[].image_a
+   * - **API ID Path**: bento.iconOnTop.primary.card[].image
    * - **Documentation**: https://prismic.io/docs/field#image
    */
-  image_a: prismic.ImageField<never>;
-
-  /**
-   * ImageB field in *Bento → IconOnTop → Primary → Card*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: bento.iconOnTop.primary.card[].image_b
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  image_b: prismic.ImageField<never>;
+  image: prismic.ImageField<never>;
 
   /**
    * Title field in *Bento → IconOnTop → Primary → Card*
@@ -495,36 +485,25 @@ export interface BentoSliceIconOnTopPrimaryCardItem {
   body: prismic.RichTextField;
 
   /**
-   * Wide field in *Bento → IconOnTop → Primary → Card*
-   *
-   * - **Field Type**: Boolean
-   * - **Placeholder**: *None*
-   * - **Default Value**: false
-   * - **API ID Path**: bento.iconOnTop.primary.card[].wide
-   * - **Documentation**: https://prismic.io/docs/field#boolean
-   */
-  wide: prismic.BooleanField;
-
-  /**
-   * project_link field in *Bento → IconOnTop → Primary → Card*
+   * PageLink field in *Bento → IconOnTop → Primary → Card*
    *
    * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: bento.iconOnTop.primary.card[].project_link
+   * - **Placeholder**: Link To Platform
+   * - **API ID Path**: bento.iconOnTop.primary.card[].pagelink
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  project_link: prismic.LinkField;
+  pagelink: prismic.LinkField;
 
   /**
-   * IsNotHidden field in *Bento → IconOnTop → Primary → Card*
+   * RenderTile field in *Bento → IconOnTop → Primary → Card*
    *
    * - **Field Type**: Boolean
    * - **Placeholder**: *None*
    * - **Default Value**: true
-   * - **API ID Path**: bento.iconOnTop.primary.card[].isnothidden
+   * - **API ID Path**: bento.iconOnTop.primary.card[].rendertile
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */
-  isnothidden: prismic.BooleanField;
+  rendertile: prismic.BooleanField;
 }
 
 /**

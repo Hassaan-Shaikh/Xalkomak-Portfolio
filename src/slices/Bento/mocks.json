@@ -129,7 +129,7 @@
 								}
 							],
 							[
-								"isnothidden",
+								"rendertile",
 								{
 									"__TYPE__": "BooleanContent",
 									"value": false
@@ -203,33 +203,7 @@
 								}
 							],
 							[
-								"image_a",
-								{
-									"origin": {
-										"id": "main",
-										"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
-										"width": 5616,
-										"height": 3744
-									},
-									"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
-									"width": 5616,
-									"height": 3744,
-									"edit": {
-										"zoom": 1,
-										"crop": {
-											"x": 0,
-											"y": 0
-										},
-										"background": "transparent"
-									},
-									"credits": null,
-									"alt": null,
-									"__TYPE__": "ImageContent",
-									"thumbnails": {}
-								}
-							],
-							[
-								"image_b",
+								"image",
 								{
 									"origin": {
 										"id": "main",
@@ -255,27 +229,20 @@
 								}
 							],
 							[
-								"wide",
+								"rendertile",
 								{
 									"__TYPE__": "BooleanContent",
 									"value": true
 								}
 							],
 							[
-								"project_link",
+								"pagelink",
 								{
 									"__TYPE__": "LinkContent",
 									"value": {
 										"__TYPE__": "ExternalLink",
-										"url": "https://slicemachine.dev"
+										"url": "https://prismic.io"
 									}
-								}
-							],
-							[
-								"isnothidden",
-								{
-									"__TYPE__": "BooleanContent",
-									"value": true
 								}
 							]
 						]
