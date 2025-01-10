@@ -104,7 +104,7 @@ export default function Header({ settings }: Props) {
           </button>
         </div>
         {/* Desktop Nav */}
-        <ul className="nav__right__desk flex hidden gap-4  md:flex">
+        <ul className="nav__right__desk flex gap-4  md:flex">
           {settings.data.navbar
             .filter((item) => item.label !== "Home")
             .map((item, index) => (
