@@ -23,6 +23,11 @@ const Gallery = ({ slice }: GalleryProps): JSX.Element => {
         className="showcase__heading mb-8 flex flex-col items-center justify-center text-balance text-center text-6xl font-medium md:flex-row md:text-7xl"
       >
         <PrismicRichText field={slice.primary.title} />
+        <div
+        className="mb-4 flex flex-col items-center justify-center text-balance text-center text-xl font-medium md:flex-row md:text-7xl"
+      >
+        <PrismicRichText field={slice.primary.body} />
+      </div>
       </div>
       <div
         className="grid gap-2 grid-cols-4">
