@@ -22,10 +22,10 @@ const Gallery = ({ slice }: GalleryProps): JSX.Element => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      <div className="gallery__heading mb-4 flex flex-col items-center justify-center text-balance text-center text-6xl font-medium md:flex-row md:text-7xl">
+      <div className="gallery__heading flex flex-col items-center justify-center text-balance text-center text-6xl font-medium md:flex-row md:text-7xl">
         <PrismicRichText field={slice.primary.title} />
       </div>
-      <div className="my-4 flex flex-col items-center text-balance text-center text-xl font-medium md:text-xl">
+      <div className="my-2 flex flex-col items-center text-balance text-center text-xl font-medium md:text-xl">
         <PrismicRichText field={slice.primary.body} />
       </div>
       <div className="grid grid-cols-4 gap-2">
