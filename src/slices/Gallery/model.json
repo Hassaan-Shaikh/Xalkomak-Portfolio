@@ -64,7 +64,7 @@
                 "type": "Number",
                 "config": {
                   "label": "ColSpan",
-                  "placeholder": "1"
+                  "placeholder": "Column Span"
                 }
               }
             }

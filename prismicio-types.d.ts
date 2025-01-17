@@ -699,7 +699,7 @@ export interface GallerySliceDefaultPrimaryCarouselItem {
    * ColSpan field in *Gallery → Default → Primary → Carousel*
    *
    * - **Field Type**: Number
-   * - **Placeholder**: 1
+   * - **Placeholder**: Column Span
    * - **API ID Path**: gallery.default.primary.carousel[].colspan
    * - **Documentation**: https://prismic.io/docs/field#number
    */

@@ -18,7 +18,7 @@ export type GalleryProps = SliceComponentProps<Content.GallerySlice>;
 const Gallery = ({ slice }: GalleryProps): JSX.Element => {
   return (
     <section
-      className="max-w-8xl container mx-auto flex w-full flex-col items-center justify-start gap-3 px-4 py-16 text-white first:pt-10 md:px-6 md:py-20 lg:py-24"
+      className="max-w-full container mx-auto flex w-full flex-col items-center justify-start gap-3 px-2 py-8 text-white first:pt-10 md:px-4 md:py-4 lg:py-4"
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
@@ -49,7 +49,7 @@ const Gallery = ({ slice }: GalleryProps): JSX.Element => {
               fallback=""
               sizes="(max-width: 128px) 50vw, 30vw"
             />
-            <div className="mx-4 mt-1 text-xs">
+            <div className="mx-4 mt-1 font-thin text-xs">
               <PrismicRichText field={item.caption} />
             </div>
           </div>
