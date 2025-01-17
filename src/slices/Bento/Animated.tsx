@@ -73,24 +73,24 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
         </div>
       </div>
 
-      <div className="mb-16 mt-4 flex flex-col items-center text-balance text-center text-xl font-medium md:text-xl">
+      <div className="mb-8 mt-4 flex flex-col items-center text-balance text-center text-xl font-medium md:text-xl">
         <PrismicRichText field={slice.primary.body} />
       </div>
 
       {slice.variation === "default" && (
         <>
-          <div className="m-6 grid max-w-4xl grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-10">
+          <div className="m-6 grid max-w-4xl grid-rows-[auto_auto_auto] gap-4 md:grid-cols-3 md:gap-8">
             {slice.primary.card.map((item, index) =>
               item.rendertile && ( // Check the boolean condition here
                 <PrismicNextLink
                   field={item.project_link}
                   className={clsx(
-                    "bento__card glass-container row-span-3 grid grid-rows-subgrid gap-4 rounded-lg p-4 not-italic text-white",
+                    "bento__card glass-container border-2 border-[#521b7c] row-span-3 grid grid-rows-subgrid gap-4 rounded-lg p-4 not-italic text-white",
                     item.wide ? "md:col-span-2" : "md:col-span-1",
                   )}
                   key={index}
                 >
-                  <div className="text-2xl text-white">
+                  <div className="text-2xl text-white underline font-semibold font-serif">
                     <PrismicRichText field={item.title} />
                   </div>
                   <div className="max-w-md text-white">
@@ -99,15 +99,14 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
                   <div className="flex items-center gap-4">
                     <PrismicNextImage
                       field={item.image_a}
-                      className="mx-auto max-h-16 w-auto my-4"
+                      className="mx-auto max-h-36 rounded-md w-auto my-1"
                       alt=""
                       fallback=""
-                      sizes="(max-width: 64px) 50vw, 30vw"
                     />
                     {item.wide && (
                       <PrismicNextImage
                         field={item.image_b}
-                        className="hidden max-h-36 w-auto md:block"
+                        className="hidden mx-auto max-h-36 w-auto rounded-md md:block"
                         alt=""
                         fallback=""
                       />
@@ -143,7 +142,7 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
                     //sizes="(max-width: 128px) 50vw, 30vw"
                   />
                 </div>
-                <div className="text-2xl text-white text-center underline">
+                <div className="text-2xl text-white text-center underline font-serif font-semibold">
                   <PrismicRichText field={item.title} />
                 </div>
                 <div className="max-w-md text-white text-center">
