@@ -28,7 +28,7 @@ const Gallery = ({ slice }: GalleryProps): JSX.Element => {
       <div className="my-2 flex flex-col items-center text-balance text-center text-xl font-medium md:text-xl">
         <PrismicRichText field={slice.primary.body} />
       </div>
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid md:grid-cols-4 gap-2 grid-cols-2">
         {slice.primary.carousel.map((item, index) => (
           <div
             key={index}
@@ -49,7 +49,7 @@ const Gallery = ({ slice }: GalleryProps): JSX.Element => {
               fallback=""
               sizes="(max-width: 128px) 50vw, 30vw"
             />
-            <div className="mx-4 mt-1 font-thin text-xs">
+            <div className="mx-4 my-1 font-thin text-xs md:text-base">
               <PrismicRichText field={item.caption} />
             </div>
           </div>

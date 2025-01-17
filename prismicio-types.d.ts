@@ -261,54 +261,6 @@ type ProjectStudiesDocumentDataSlicesSlice = ContentSlice;
  */
 interface ProjectStudiesDocumentData {
   /**
-   * Project field in *Projects*
-   *
-   * - **Field Type**: Title
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project_studies.project
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  project: prismic.TitleField;
-
-  /**
-   * Description field in *Projects*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project_studies.description
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  description: prismic.RichTextField;
-
-  /**
-   * icon field in *Projects*
-   *
-   * - **Field Type**: Select
-   * - **Placeholder**: *None*
-   * - **Default Value**: snx
-   * - **API ID Path**: project_studies.icon
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#select
-   */
-  icon: prismic.SelectField<
-    "snx" | "snapshots" | "dawg" | "misc" | "blender" | "godot",
-    "filled"
-  >;
-
-  /**
-   * image field in *Projects*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project_studies.image
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  image: prismic.ImageField<never>;
-
-  /**
    * Slice Zone field in *Projects*
    *
    * - **Field Type**: Slice Zone
@@ -617,18 +569,73 @@ type BentoSliceVariation = BentoSliceDefault | BentoSliceIconOnTop;
 export type BentoSlice = prismic.SharedSlice<"bento", BentoSliceVariation>;
 
 /**
+ * Item in *Content → Default → Primary → Content*
+ */
+export interface ContentSliceDefaultPrimaryContentItem {
+  /**
+   * Image field in *Content → Default → Primary → Content*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.default.primary.content[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * ImageCaption field in *Content → Default → Primary → Content*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.default.primary.content[].imagecaption
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  imagecaption: prismic.RichTextField;
+
+  /**
+   * Content field in *Content → Default → Primary → Content*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.default.primary.content[].content
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  content: prismic.RichTextField;
+}
+
+/**
  * Primary content in *Content → Default → Primary*
  */
 export interface ContentSliceDefaultPrimary {
   /**
-   * Content field in *Content → Default → Primary*
+   * Title field in *Content → Default → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.default.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.TitleField;
+
+  /**
+   * CaptionTitle field in *Content → Default → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: content.default.primary.content
+   * - **API ID Path**: content.default.primary.captiontitle
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  content: prismic.RichTextField;
+  captiontitle: prismic.RichTextField;
+
+  /**
+   * Content field in *Content → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.default.primary.content[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  content: prismic.GroupField<Simplify<ContentSliceDefaultPrimaryContentItem>>;
 }
 
 /**
@@ -1067,6 +1074,7 @@ declare module "@prismicio/client" {
       BentoSliceDefault,
       BentoSliceIconOnTop,
       ContentSlice,
+      ContentSliceDefaultPrimaryContentItem,
       ContentSliceDefaultPrimary,
       ContentSliceVariation,
       ContentSliceDefault,

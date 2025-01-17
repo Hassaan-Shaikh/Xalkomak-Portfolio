@@ -47,13 +47,13 @@ export default function Header({ settings }: Props) {
           <div className="md:hidden" />
           <div className="md:hidden" />
 
-          <Link href="/" className="nav__left group relative ">
-            <h1 className="text-2xl md:text-xl">Xalkomak</h1>
+          <Link href="/" className="nav__left group relative">
+            <h1 className="-ml-4 text-2xl md:ml-0 md:text-xl">Xalkomak</h1>
             <span className="absolute bottom-[-6px] left-1/2 h-0.5 w-0 bg-white transition-all duration-300 ease-out group-hover:left-0 group-hover:w-full"></span>
           </Link>
           <button
             type="button"
-            className="nav__right__mobile block p-2 text-3xl text-white  md:hidden"
+            className="nav__right__mobile block p-2 text-3xl text-white md:hidden"
             aria-expanded={isOpen}
             onClick={() => setIsOpen(true)}
           >
@@ -104,7 +104,7 @@ export default function Header({ settings }: Props) {
           </button>
         </div>
         {/* Desktop Nav */}
-        <ul className="nav__right__desk flex gap-4  md:flex">
+        <ul className="nav__right__desk flex hidden gap-4 md:inline md:flex">
           {settings.data.navbar
             .filter((item) => item.label !== "Home")
             .map((item, index) => (

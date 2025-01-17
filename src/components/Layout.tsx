@@ -35,7 +35,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <div style={{ position: "relative" }}>
-      <div
+      {/* <div
         ref={overlayRef}
         style={{
           position: "fixed",
@@ -47,7 +47,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           zIndex: 1000,
           transform: "translateX(-100%)",
         }}
-      ></div>
+      ></div> */}
       <main>{children}</main>
     </div>
   );

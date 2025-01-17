@@ -12,41 +12,6 @@
           "label": "UID"
         }
       },
-      "project": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Project",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "heading1"
-        }
-      },
-      "description": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Description",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph"
-        }
-      },
-      "icon": {
-        "type": "Select",
-        "config": {
-          "label": "icon",
-          "placeholder": "",
-          "options": ["snx", "snapshots", "dawg", "misc", "blender", "godot"],
-          "default_value": "snx"
-        }
-      },
-      "image": {
-        "type": "Image",
-        "config": {
-          "label": "image",
-          "constraint": {},
-          "thumbnails": []
-        }
-      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

@@ -46,3 +46,8 @@ body {
 *::selection {
   background-color: hsla(0, 0%, 100%, 0.1);
 }
+
+.page__content > img{
+  width: 10%;
+  height: 10%;
+}

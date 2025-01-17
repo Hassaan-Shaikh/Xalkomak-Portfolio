@@ -79,7 +79,7 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
 
       {slice.variation === "default" && (
         <>
-          <div className="m-6 grid max-w-4xl grid-rows-[auto_auto_auto] gap-4 md:grid-cols-3 md:gap-8">
+          <div className="m-6 grid max-w-4xl grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-8">
             {slice.primary.card.map((item, index) =>
               item.rendertile && ( // Check the boolean condition here
                 <PrismicNextLink
@@ -90,7 +90,7 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
                   )}
                   key={index}
                 >
-                  <div className="text-2xl text-white underline font-semibold font-serif">
+                  <div className="text-2xl text-white hover:underline font-semibold">
                     <PrismicRichText field={item.title} />
                   </div>
                   <div className="max-w-md text-white">
@@ -129,7 +129,7 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
               <PrismicNextLink
                 field={item.pagelink}
                 className={clsx(
-                  "bento__card glass-container row-span-3 border-2 border-[#521b7c] grid grid-rows-subgrid md:col-span-1 gap-4 rounded-lg p-4 not-italic text-white hover:underline",
+                  "bento__card glass-container row-span-3 border-2 border-[#521b7c] grid grid-rows-subgrid md:col-span-1 gap-4 rounded-lg p-4 not-italic text-white ",
                 )}
                 key={index}
               >
@@ -142,7 +142,7 @@ export default function Animated({ slice }: { slice: Content.BentoSlice }) {
                     //sizes="(max-width: 128px) 50vw, 30vw"
                   />
                 </div>
-                <div className="text-2xl text-white text-center underline font-serif font-semibold">
+                <div className="text-2xl text-white text-center underline font-semibold">
                   <PrismicRichText field={item.title} />
                 </div>
                 <div className="max-w-md text-white text-center">

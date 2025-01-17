@@ -56,7 +56,7 @@ export default function Animated({ slice }: { slice: Content.HeroSlice }) {
         </div>
         <PrismicRichText field={slice.primary.heading} />
         <div className="hero__svg">
-          <PiHandWavingFill className="mb-4 mx-4 md:mb-0" />
+          <PiHandWavingFill className="mb-4 mx-4 md:mb-0 hidden md:inline" />
         </div>
       </div>
       <div className="hero__body mx-auto mt-4 text-balance text-center text-2xl text-white">
