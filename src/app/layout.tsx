@@ -24,7 +24,7 @@ export default function RootLayout({
         <meta name="description" content="Greetings! This is Xalkomak's website!"/>
         <meta property="og:title" content="Xalkomak" />
         <meta property="og:description" content="Xalkomak's personal website." />
-        <meta property="og:image" content="public/imgs/Xalkobot_Cropped.png" />
+        <meta property="og:image" content="public/imgs/MrVpfp_small.png" />
         <meta property="og:url" content="https://xalkomak.vercel.app/" />
         <meta property="og:type" content="website" />
       </Head>
